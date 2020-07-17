@@ -1,0 +1,10 @@
+t=int(input())
+s=0
+for i in range(t):
+    l=list(map(int,input()))
+    for j in range(len(l)-1):
+        if l[j]+l[j+1]>17:
+            s+=(2**i)
+            break
+    
+print(s)
